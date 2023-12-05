@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    .background{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.36) ), url('./images/bg2.png');
+        background-position: top;
+        background-size: cover;
+        height: 560px; 
+        width: 100%;
+    }
+
+    .formsection {
+    background-image: url('./images/Backgroundbg.png');
+    background-position: center bottom; 
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+    .sidebg{
+        background-image: url('./images/side.png');
+        background-position: center;
+        background-size: cover;
+        height: 920px;
+        width: 45%;
+    }
+
+    .input {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%);
+    color: #555; 
+    font-size: 1.5rem;
+}
+
+.input-with-icon input {
+    padding-left: 30px;
+    width: 100%;
+}
+
+
+</style>
+<body class="w-full h-auto font-gluten">
+
+    <section class="flex flex-col w-[100%] background ">
+    
+        <!-- Header navigation -->
+        <div class="flex justify-between items-center w-full h-[90px] px-[5%] py-[1%]">
+            <nav class="flex">
+                <ul class="flex gap-4">
+                    <a href="#" class="text-white text-lg hover:border-t-2 ease-in-out duration-100"><li> Test1 </li></a>
+                    <a href="#" class="text-white text-lg hover:border-t-2 ease-in-out duration-100"><li> Test2 </li></a>
+                    <a href="#" class="text-white text-lg hover:border-t-2 ease-in-out duration-100"><li> Test3 </li></a>
+                    <a href="#" class="text-white text-lg hover:border-t-2 ease-in-out duration-100"><li> Test4 </li></a>
+                    <a href="#" class="text-white text-lg hover:border-t-2 ease-in-out duration-100"><li> Test5 </li></a>
+                </ul>
+            </nav>
+
+            <!-- Logo -->
+            <div class="flex">
+                <h1 class="text-[36px] text-white">CHOCOLAT</h1>
+            </div>
+
+            <!-- Right nav group -->
+            <div class="flex gap-3">
+
+                <!-- Search -->
+                <div class="flex">          
+                    <i class="ri-search-line text-[30px] text-white"></i>
+                </div>
+        
+                <!-- Login -->
+                <div class="flex items-center gap-2">
+                    <h1 class="text-white text-xs">Login</h1>
+                    <i class="ri-account-circle-line text-[30px] text-white"></i>
+                </div>
+        
+                <!-- Crat and Favorite -->
+                <div class="flex items-center gap-3">
+                    <div class="flex items-center">
+                        <i class="ri-shopping-cart-line text-[30px] text-white"></i>
+                    <h1 class="bg-white text-black rounded-full px-2 py-1">02</h1>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <i class="ri-heart-line text-[30px] text-white"></i>
+                    <h1 class="bg-white text-black rounded-full px-2 py-1">04</h1>
+                    </div>
+                    
+                </div>
+            </div>
+            
+
+        </div>
+
+        <div class="flex flex-col h-full justify-center items-center">
+            <h1 class="text-5xl text-white font-falcon uppercase font-bold text-center">Chocolate Bliss Awaits Login!</h1>
+            <hr class="w-[200px] h-[3px] mt-4 bg-white">
+
+            <ul class="flex gap-8 mt-[20px]">
+                <a href="#" class="uppercase text-2xl font-falcon text-white"><li class="list-disc text-2xl">Home</li></a>
+                <a href="#" class="uppercase text-2xl font-falcon text-white"><li class="list-disc text-2xl">login</li></a>
+            </ul>
+        </div>
+            
+    </section>
+
+    <!-- Form section -->
+    <section class="formsection flex w-[100%] h-[100%] pb-[130px]">
+
+        <!-- Inner wrapper -->
+        <div class="flex w-[100%] px-[5%] py-[5%]">
+
+            <!-- Left side -->
+            <div class="flex flex-col sidebg">
+                <h1 class="flex mt-[650px] mr-[350px] text-white text-6xl uppercase font-falcon font-bold rotate-[-90deg]">choco <br>getway. </h1>
+            </div>
+
+            <!-- Right side -->
+            <div class="flex flex-col w-[55%] p-14 bg-black">
+                <div class="flex w-full">
+                    <button class="bg-[#772000] text-2xl text-white w-[50%] py-4 uppercase font-falcon border-[#772000]">login</button>
+                    <button class=" text-2xl text-white w-[50%] py-4 uppercase font-falcon border border-[#772000]">register</button>
+                </div>
+
+                <h1 class="text-xl text-white font-falcon capitalize mt-14">enter your account information:</h1>
+
+                <!-- Form -->
+                <form action="" method="" class="h-auto w-full mt-10 relative">
+                    
+                    <!-- Email -->
+                    <div class="flex">
+                    <label for="email" class="absolute top-[-10px] left-5 capitalize bg-[#fcfcfc] text-black font-falcon text-xs font-semibold w-[100px] text-center py-1 rounded-md">Email Address</label>
+                    
+                        <button class="flex  justify-center items-center gap-6 h-[60px] w-[20%] bg-[#232323] border border-none rounded-tl-md rounded-bl-md text-center"><i class="ri-mail-line text-[#a0a0a0] text-[25px] font-light"></i> <div class="w-[2px] h-[40%] bg-[#a0a0a0]"></div> </button>
+                        <input type="email" placeholder="exampleavc@gmail.com" name="email" id="email" class="w-full bg-[#232323] border border-none rounded-tr-md rounded-br-md px-4 py-2 h-[60px] font-falcon">
+                    </div>
+                
+                    <!-- password -->
+                    <div class="flex mt-10">
+                    <label for="password" class="absolute top-[90px] left-5 capitalize bg-[#fcfcfc] text-black font-falcon text-xs font-semibold w-[100px] text-center py-1 rounded-md">Password</label>
+                    
+                        <button class="flex  justify-center items-center gap-6 h-[60px] w-[20%] bg-[#232323] border border-none rounded-tl-md rounded-bl-md text-center"><i class="ri-lock-line text-[#a0a0a0] text-[25px] font-light"></i> <div class="w-[2px] h-[40%] bg-[#a0a0a0]"></div> </button>
+                        <input type="password" placeholder="enter your password" name="password" id="password" class="w-full bg-[#232323] border border-none rounded-tr-md rounded-br-md px-4 py-2 h-[60px] font-falcon">
+                        <i class="ri-eye-line text-white absolute right-[30px] top-[115px] text-[25px]"></i>
+                    </div>
+
+                    <!-- Forgot password -->
+                    <div class="flex mt-[30px]">
+                        <h1 class="text-xl font-semibold text-white font-falcon capitalize"><i class="ri-mail-fill text-xl text-white mr-5"></i><span class="text-[#6e6e6e]">forget your </span><b>password ?</b></h1>
+                    </div>
+                    
+                    <!-- Register now -->
+                    <div class="flex mt-[30px]">
+                        <h1 class="text-xl font-bold text-white font-falcon capitalize"><span class="text-[#6e6e6e]">if you don't have an account, please  </span><b>register now</b></h1>
+                    </div>
+
+                    <!-- Login button -->
+                    <div class="flex w-full h-auto mt-8">
+                        <button class="w-full py-4 bg-[#772000] rounded-md text-white text-xl uppercase">login</button>
+                    </div>
+
+                    <!-- Under part -->
+                    <div class="w-full flex justify-center items-center gap-3 mt-6">
+                        <hr class="w-[100px] h-[1px] bg-white"> <h1 class="text-white text-3xl font-light font-falcon">OR</h1> <hr class="w-[100px] h-[1px] bg-white">
+                    </div>
+
+                    <!-- Social icons -->
+                    <div class="flex justify-center items-start gap-5 h-auto mt-[50px] w-full">
+                        <img class="h-[60px] w-auto" src="images/Google.png" alt="facebook">
+                        <img class="h-[60px] w-auto" src="images/Facebook.png" alt="facebook">
+                    </div>  
+                </form>
+            </div> 
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <section class="flex w-[100%]">
+
+        <!-- Footer start -->
+        <div class=" w-[100%] px-[5%] py-[5%] grid grid-cols-4 ">
+
+            <!-- Col 01 -->
+            <div class=" flex flex-col justify-start">
+                <h1 class="text-3xl uppercase">chocolat</h1>
+                <p class="text-xs pt-5 text-[#232323] font-falcon">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci at similique, hic ad, eaque dolor nihil ut ipsa eius repellendus veritatis sit modi repudiandae eligendi facilis atque aliquam est. Dolor.</p>
+                
+                <div class="flex flex-col">
+
+                    <!-- Email -->
+                    <div class="flex flex-row justify-start items-center gap-3 mt-3">
+                        <i class="ri-mail-line text-2xl  "></i>
+                        <h1 class="text-[#232323] font-falcon">debra.holt@example.com</h1>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="flex flex-row justify-start items-center gap-3 mt-3">
+                        <i class="ri-phone-line text-2xl  "></i>
+                        <h1 class="text-[#232323] font-falcon">(303) 555-0105</h1>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="flex flex-row justify-start items-center gap-3 mt-3">
+                        <i class="ri-map-pin-line text-2xl  "></i>
+                        <h1 class="text-[#232323] font-falcon">4140 Parker Rd. Allentown, New Mexico 31134</h1>
+                    </div>
+                     
+                </div>
+            </div>
+
+            
+            <!-- Col 02 -->
+            <div class="px-5">
+                <h1 class="text-3xl uppercase">quick links</h1>
+
+                <div class="flex flex-row justify-start items-center gap-3 mt-3">
+                    <ul class="flex flex-col gap-5">
+                        <a href="" class="text-xl text-[#232323] font-falcon"><li>Test01</li></a>
+                        <a href="" class="text-xl text-[#232323] font-falcon"><li>Test02</li></a>
+                        <a href="" class="text-xl text-[#232323] font-falcon"><li>Test03</li></a>
+                        <a href="" class="text-xl text-[#232323] font-falcon"><li>Test04</li></a>
+                        <a href="" class="text-xl text-[#232323] font-falcon"><li>Test05</li></a>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <!-- Col 03 -->
+            <div class="px-3">
+                <h1 class="text-3xl uppercase">collections</h1>
+
+                <div class="flex flex-row justify-start items-center gap-3 mt-3">
+                    <ul class="flex flex-col gap-5">
+                        <a href="" class="text-xl text-[#232323] font-falcon"><li>Test06</li></a>
+                        <a href="" class="text-xl text-[#232323] font-falcon"><li>Test07</li></a>
+                        <a href="" class="text-xl text-[#232323] font-falcon"><li>Test08</li></a>
+                        <a href="" class="text-xl text-[#232323] font-falcon"><li>Test09</li></a>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <!-- Col 04 -->
+            <div class="">
+                <h1 class="text-3xl uppercase">newsletter</h1>
+                <p class="text-xs pt-5 text-[#232323] font-falcon"><p class="text-xs pt-5 text-[#232323] font-falcon">Welcome to our chocolate haven, where passion meets perfection. </p>
+
+
+                <form action="" method="" class="mt-5">
+                    <div class="input">
+                        <i class="ri-mail-line icon"></i>
+                        <input type="email" name="email" id="email" class="text-xl font-falcon text-[#232323] border-b-[2px] border-black capitalize focus:none outline-none " placeholder="Enter your email">
+                    </div>
+                </form>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="/dist/script.js"></script>
+</body>
+</html>
